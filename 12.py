@@ -47,10 +47,10 @@ def num_divisors(n):
 
 def main(n):
     gen = triangle_nums()
-    t = next(gen)
-    while num_divisors(t) < n:
-        t = next(gen)
-    return t
+    triangle = next(gen)
+    while num_divisors(triangle) < n:
+        triangle = next(gen)
+    return triangle
 
 if __name__ == '__main__':
     print(main(500))
